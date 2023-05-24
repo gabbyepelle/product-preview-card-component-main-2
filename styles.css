@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+html{
+    font-size: 14px;
+}
+
+
+
+:root{
+    --bg-color:hsl(30, 38%, 92%);
+    --card-color: white;
+    --accent-color: hsl(158, 36%, 37%);
+    --heading-color: hsl(212, 21%, 14%);
+    --text-color:hsl(212, 21%, 14%);
+    --hover-color:  rgb(6, 57, 6);
+    --heading-font:'Fraunces', serif;
+    --main-font: 'Montserrat', sans-serif;
+}
+
+
+body{
+    background-color: var(--bg-color);
+
+}
+
+main{
+    min-height: 100vh;
+    font-family: var(--main-font);
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.image{
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    flex-grow: 1;
+
+}
+
+
+
+.content{
+    background-color:var(--card-color);
+    padding: 2rem;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1.07rem;
+   
+}
+
+.content p{
+    line-height: 2;
+}
+
+.container span, p{
+    color: var(--text-color);
+}
+
+#perf{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h1{
+font-family:var(--heading-font);
+color:var(--heading-color);
+}
+
+#price{
+    font-size: 2rem;
+    color:var(--accent-color);
+    margin-right: 1rem;
+}
+
+#original{
+    text-decoration: line-through;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+button{
+    display: block;
+    background-color:var(--accent-color);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 1.3rem 2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+button img{
+    margin-right: 0.5rem;
+}
+
+button:hover, button:focus{
+    background-color: var(--hover-color);
+}
+
+@media(min-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 52vh;  
+      
+    }
+    
+    .image{
+        background-image: url("./images/image-product-desktop.jpg");
+        background-size: cover;
+        height: 52vh; 
+       
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;
+        width: 27rem;
+
+    }
+
+    .content{
+       padding: 3rem;
+       font-size: 1.15rem;
+       box-sizing: border-box;
+       width: 27rem; 
+    } 
+}
+
+ @media(min-width: 1131px){
+    .image{
+        width: 29rem;
+    }
+
+    .content{
+        font-size: 1.3rem;
+        width: 28rem;
+    }
+}  
+ 
