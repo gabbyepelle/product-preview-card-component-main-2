@@ -97,6 +97,7 @@ color:var(--heading-color);
 button{
     display: block;
     background-color:var(--accent-color);
+    box-sizing: border-box;
     border: none;
     border-radius: 3px;
     color: white;
@@ -117,19 +118,19 @@ button:hover, button:focus{
     .container{
         display: flex;
         flex-direction: row;
-        height: 52vh;  
+        height: 35rem;
       
     }
     
     .image{
         background-image: url("./images/image-product-desktop.jpg");
         background-size: cover;
-        height: 52vh; 
+        height: 100%;
        
         border-top-right-radius: 0;
         border-top-left-radius: 10px; 
         border-bottom-left-radius: 10px;
-        width: 27rem;
+        width: 25rem;
 
     }
 
@@ -141,14 +142,4 @@ button:hover, button:focus{
     } 
 }
 
- @media(min-width: 1131px){
-    .image{
-        width: 29rem;
-    }
-
-    .content{
-        font-size: 1.3rem;
-        width: 28rem;
-    }
-}  
  
